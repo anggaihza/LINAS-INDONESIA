@@ -1,3 +1,4 @@
+"use client";
 import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
 import Grid from "@/components/Grid";
