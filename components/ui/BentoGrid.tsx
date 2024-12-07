@@ -130,9 +130,6 @@ export const BentoGridItem = ({
             {title}
           </div>
 
-          {/* for the github 3d globe */}
-          {/* {id === 2 && <GridGlobe />} */}
-
           {/* Tech stack list div */}
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
