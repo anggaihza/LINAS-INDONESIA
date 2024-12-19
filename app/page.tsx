@@ -7,6 +7,7 @@ import {FloatingNav} from "@/components/ui/FloatingNav";
 import {navItems} from "@/data";
 import Approach from "../components/Approach";
 import Footer from "@/components/Footer";
+import {WhatsAppButton} from "@/components/ui/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Experience />
         <Approach />
         <Footer />
+        <WhatsAppButton />
       </div>
     </main>
   );
