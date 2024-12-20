@@ -1,5 +1,5 @@
 "use client";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {
   motion,
   AnimatePresence,
@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import {cn} from "@/lib/utils";
+import {useRouter} from "next/router";
 
 export const FloatingNav = ({
   navItems,
@@ -21,6 +22,7 @@ export const FloatingNav = ({
   className?: string;
 }) => {
   const {scrollYProgress} = useScroll();
+  const currentLocale = "en";
 
   // set true for the initial state so that nav bar is visible in the hero section
   const [visible, setVisible] = useState(true);
@@ -83,6 +85,16 @@ export const FloatingNav = ({
             <span className=" text-sm !cursor-pointer">{navItem.name}</span>
           </Link>
         ))}
+        <div className="flex items-center space-x-2 ml-4">
+          <img
+            src="/globe.svg" // Replace with your globe image path
+            alt="Globe"
+            className="w-5 h-5"
+          />
+          <span className="text-sm font-medium dark:text-neutral-50 text-neutral-600">
+            {currentLocale.toUpperCase()}
+          </span>
+        </div>
         {/* remove this login btn */}
         {/* <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
           <span>Login</span>
