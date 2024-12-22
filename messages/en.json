@@ -1,7 +1,69 @@
 {
   "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page",
-    "headerTitle": "Transforming Concepts into Seamless User Experiences"
+    "smallTitle": "Welcome to Arsy Creative Studio",
+    "heroTitle": "Transforming Ideas into Stunning Designs & Functional Solutions",
+    "heroDesc": "We craft exceptional web & app experiences and visually captivating designs."
+  },
+  "AboutPage": {
+    "card1": "We value collaboration through open and transparent communication.",
+    "card2": "Handled by certified professionals for the best results.",
+    "card3": "Specialize in blending creativity and functionality to deliver impactful solutions.",
+    "card4": "We're always improve our services &",
+    "card4descs": "Our Tech Stack",
+    "card5": "Ready to create something amazing together?",
+    "card6": "Not Just Building, We’re Shaping the Future.",
+    "card6desc": "Redefining possibilities through design and innovation.",
+    "aboutCTAButton": "Copy Email Address"
+  },
+  "Testimonials": {
+    "title1": "Kind words from",
+    "title2": "satisfied clients"
+  },
+  "OurServices": {
+    "BigTitle": "What We",
+    "BigTitle2": "Offer",
+    "Service1": {
+      "Title": "Fullstack Web Development",
+      "Desc": "End-to-end development for seamless and scalable web solutions."
+    },
+    "Service2": {
+      "Title": "Mobile Development",
+      "Desc": "Custom mobile apps designed for both iOS and Android platforms."
+    },
+    "Service3": {
+      "Title": "UI/UX Design",
+      "Desc": "User-centric designs to enhance experience and engagement."
+    },
+    "Service4": {
+      "Title": "Graphic Design",
+      "Desc": "Visual storytelling through impactful and creative designs."
+    }
+  },
+  "OurApproach": {
+    "BigTitle": "Our",
+    "BigTitle2": "Approach",
+    "Phases1": {
+      "Title": "Planning & Strategy",
+      "Order": "Phase 1",
+      "Desc": "We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements."
+    },
+    "Phases2": {
+      "Title": "Development & Progress Update",
+      "Order": "Phase 2",
+      "Desc": "Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way."
+    },
+    "Phases3": {
+      "Title": "Development & Launch",
+      "Order": "Phase 3",
+      "Desc": "This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up."
+    }
+  },
+  "FooterSection": {
+    "HeadingStart": "Ready to take",
+    "HeadingHighlight": "your",
+    "HeadingEnd": "digital presence to the next level?",
+    "Description": "Reach out to me today and let's discuss how I can help you achieve your goals.",
+    "ButtonText": "Let's get in touch",
+    "ContactEmail": "contact@jsmastery.pro"
   }
 }

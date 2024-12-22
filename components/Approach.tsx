@@ -3,29 +3,29 @@ import React from "react";
 
 import {AnimatePresence, motion} from "framer-motion";
 import {CanvasRevealEffect} from "./ui/CanvasRevealEffect";
+import {useTranslations} from "next-intl";
 
 const Approach = () => {
+  const t = useTranslations("OurApproach");
   return (
     <section className="w-full py-20">
       <h1 className="heading">
-        My <span className="text-purple">approach</span>{" "}
+        {t("BigTitle")} <span className="text-purple">{t("BigTitle2")}</span>{" "}
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card
-          title="Planning & Strategy"
-          icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll  discuss the things like site structure, navigation, and content requirement.">
+          title={t("Phases1.Title")}
+          icon={<AceternityIcon order={t("Phases1.Order")} />}
+          des={t("Phases1.Desc")}>
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
           />
         </Card>
         <Card
-          title="Development & Progress Update"
-          icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way.">
+          title={t("Phases2.Title")}
+          icon={<AceternityIcon order={t("Phases2.Order")} />}
+          des={t("Phases2.Desc")}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black"
@@ -39,11 +39,9 @@ const Approach = () => {
           {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Development & Launch"
-          icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up.">
+          title={t("Phases3.Title")}
+          icon={<AceternityIcon order={t("Phases3.Order")} />}
+          des={t("Phases3.Desc")}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"

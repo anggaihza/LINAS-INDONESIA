@@ -53,7 +53,7 @@ export const FloatingNav = ({
       // Wait for locale propagation (optional, if needed to sync translations)
       await new Promise((resolve) => setTimeout(resolve, 100));
     } catch (error) {
-      console.error("Error changing locale:", error);
+      // console.error("Error changing locale:", error);
     } finally {
       // window.location.reload();
       setIsLoading(false); // End loading when done

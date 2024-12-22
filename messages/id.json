@@ -1,7 +1,69 @@
 {
   "HomePage": {
-    "title": "Hello duniaaaaaaa!",
-    "about": "pergi ke hal about page",
-    "headerTitle": "Mengubah Konsep Menjadi Pengalaman Pengguna yang Sempurna"
+    "smallTitle": "Selamat Datang di Arsy Creative Studio",
+    "heroTitle": "Mewujudkan Ide Menjadi Desain Menawan & Solusi Fungsional",
+    "heroDesc": "Kami menciptakan pengalaman web & aplikasi yang luar biasa dengan desain yang memukau."
+  },
+  "AboutPage": {
+    "card1": "Kami percaya kolaborasi terbaik dimulai dari komunikasi yang terbuka dan transparan.",
+    "card2": "Proyek Anda akan ditangani oleh profesional bersertifikat untuk hasil yang optimal.",
+    "card3": "Kami memadukan kreativitas dan fungsi untuk menghadirkan solusi yang benar-benar berkesan.",
+    "card4": "Kami terus berinovasi dan meningkatkan layanan &",
+    "card4descs": "Teknologi kami",
+    "card5": "Siap untuk menciptakan sesuatu yang luar biasa bersama kami?",
+    "card6": "Bukan Sekadar Membangun, Kami Membentuk Masa Depan.",
+    "card6desc": "Mendefinisikan ulang batasan melalui desain dan inovasi.",
+    "aboutCTAButton": "Salin Alamat Email"
+  },
+  "Testimonials": {
+    "title1": "Ulasan dari",
+    "title2": "klien yang puas"
+  },
+  "OurServices": {
+    "BigTitle": "Apa yang",
+    "BigTitle2": "Kami Tawarkan",
+    "Service1": {
+      "Title": "Pengembangan Web Fullstack",
+      "Desc": "Pengembangan menyeluruh untuk solusi web yang mulus dan dapat diskalakan."
+    },
+    "Service2": {
+      "Title": "Pengembangan Aplikasi Mobile",
+      "Desc": "Aplikasi mobile khusus untuk platform iOS dan Android sesuai kebutuhan Anda."
+    },
+    "Service3": {
+      "Title": "Desain UI/UX",
+      "Desc": "Desain yang berpusat pada pengguna untuk pengalaman yang lebih menarik dan efektif."
+    },
+    "Service4": {
+      "Title": "Desain Grafis",
+      "Desc": "Menyampaikan cerita visual melalui desain kreatif dan berkesan."
+    }
+  },
+  "OurApproach": {
+    "BigTitle": "Pendekatan",
+    "BigTitle2": "Kami",
+    "Phases1": {
+      "Title": "Perencanaan & Strategi",
+      "Order": "Langkah 1",
+      "Desc": "Kami akan bekerja sama untuk memetakan tujuan situs web Anda, audiens yang dituju, serta fitur utama. Struktur situs, navigasi, hingga kebutuhan konten akan dirancang secara detail."
+    },
+    "Phases2": {
+      "Title": "Pengembangan & Pembaruan Progres",
+      "Order": "Langkah 2",
+      "Desc": "Setelah rencana disepakati, kami akan memulai pengembangan dan secara rutin memberikan pembaruan di setiap tahap pengerjaan."
+    },
+    "Phases3": {
+      "Title": "Penyelesaian & Peluncuran",
+      "Order": "Langkah 3",
+      "Desc": "Kami akan menerjemahkan desain yang telah disetujui ke dalam kode fungsional, memastikan semua berjalan dengan lancar sebelum peluncuran resmi."
+    }
+  },
+  "FooterSection": {
+    "HeadingStart": "Siap meningkatkan",
+    "HeadingHighlight": "kehadiran digital",
+    "HeadingEnd": "Anda ke level berikutnya?",
+    "Description": "Hubungi kami hari ini dan mari berdiskusi bagaimana kami dapat membantu Anda mencapai tujuan.",
+    "ButtonText": "Hubungi Kami",
+    "ContactEmail": "contact@jsmastery.pro"
   }
 }

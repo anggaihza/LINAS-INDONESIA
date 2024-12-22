@@ -14,8 +14,6 @@ const LoadingContext = createContext<LoadingContextType | undefined>(undefined);
 export const LoadingProvider = ({children}: {children: ReactNode}) => {
   const [isLoading, setIsLoading] = useState(false);
 
-  console.log("loading", isLoading);
-
   return (
     <LoadingContext.Provider value={{isLoading, setIsLoading}}>
       {children}

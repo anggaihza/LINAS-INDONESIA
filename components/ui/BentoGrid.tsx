@@ -14,6 +14,7 @@ const BackgroundGradientAnimation = dynamic(
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
 import {useState} from "react";
+import {useTranslations} from "next-intl";
 
 export const BentoGrid = ({
   className,
@@ -57,6 +58,7 @@ export const BentoGridItem = ({
   const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
 
   const [copied, setCopied] = useState(false);
+  const t = useTranslations("AboutPage");
 
   const defaultOptions = {
     loop: copied,
@@ -177,7 +179,7 @@ export const BentoGridItem = ({
               </div>
 
               <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
+                title={copied ? "Email is Copied!" : t("aboutCTAButton")}
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}

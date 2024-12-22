@@ -1,14 +1,46 @@
 "use client";
 import React from "react";
 
-import {workExperience} from "@/data";
 import {Button} from "./ui/MovingBorders";
+import {useTranslations} from "next-intl";
 
 const Experience = () => {
+  const t = useTranslations("OurServices");
+  const workExperience = [
+    {
+      id: 1,
+      title: "Fullstack Web Development",
+      desc: t("Service1.Desc"),
+      className: "md:col-span-2",
+      thumbnail: "/exp1.svg",
+    },
+    {
+      id: 2,
+      title: "Mobile Development",
+      desc: t("Service2.Desc"),
+      className: "md:col-span-2",
+      thumbnail: "/exp2.svg",
+    },
+    {
+      id: 3,
+      title: "UI/UX Design",
+      desc: t("Service3.Desc"),
+      className: "md:col-span-2",
+      thumbnail: "/exp3.png",
+    },
+    {
+      id: 4,
+      title: "Graphic Design",
+      desc: t("Service4.Desc"),
+      className: "md:col-span-2",
+      thumbnail: "/exp4.svg",
+    },
+  ];
+
   return (
     <div className="py-20 w-full">
       <h1 className="heading">
-        My <span className="text-purple">work experience</span>
+        {t("BigTitle")} <span className="text-purple">{t("BigTitle2")}</span>
       </h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
