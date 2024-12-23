@@ -10,25 +10,17 @@ import Link from "next/link";
 import {cn} from "@/lib/utils";
 import {useRouter} from "next/navigation";
 import {useLoading} from "@/context/LoadingProvider";
+import {useTranslations, useLocale} from "next-intl";
 
-export const FloatingNav = ({
-  navItems,
-  className,
-}: {
-  navItems: {
-    name: string;
-    link: string;
-    icon?: JSX.Element;
-  }[];
-  className?: string;
-}) => {
+export const FloatingNav = ({className}: {className?: string}) => {
   const {scrollYProgress} = useScroll();
-  const currentLocale = "en";
-  const [localeSwitcherVisible, setLocaleSwitcherVisible] = useState(false);
   const router = useRouter();
+  const currentLocale = useLocale();
+  const [localeSwitcherVisible, setLocaleSwitcherVisible] = useState(false);
   const {isLoading, setIsLoading} = useLoading();
   const [visible, setVisible] = useState(true);
   const localeSwitcherRef = useRef<HTMLDivElement | null>(null);
+  const t = useTranslations("NavItem");
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
@@ -77,9 +69,15 @@ export const FloatingNav = ({
     };
   }, []);
 
+  const navItems = [
+    {name: t("About"), link: "#about"},
+    {name: t("Projects"), link: "#projects"},
+    {name: t("Testimonials"), link: "#testimonials"},
+    {name: t("FAQ"), link: "#contact"},
+  ];
+
   return (
     <>
-      {isLoading && <div className="loading-spinner">Loading...</div>}
       <AnimatePresence mode="wait">
         <motion.div
           initial={{
