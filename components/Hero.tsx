@@ -1,10 +1,10 @@
 "use client";
-import {FaLocationArrow} from "react-icons/fa6";
+import { FaLocationArrow } from "react-icons/fa6";
 
 import MagicButton from "./MagicButton";
-import {Spotlight} from "./ui/Spotlight";
-import {TextGenerateEffect} from "@/utils/TextGenerateEffect";
-import {useTranslations} from "next-intl";
+import { Spotlight } from "./ui/Spotlight";
+import { TextGenerateEffect } from "@/utils/TextGenerateEffect";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
   const t = useTranslations("HomePage");
@@ -33,7 +33,8 @@ const Hero = () => {
        */}
       <div
         className="h-screen w-full dark:bg-black-100 dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
-       absolute top-0 left-0 flex items-center justify-center">
+       absolute top-0 left-0 flex items-center justify-center"
+      >
         {/* Radial gradient for the container to give a faded look */}
         <div
           // chnage the bg to bg-black-100, so it matches the bg color and will blend in
@@ -55,7 +56,7 @@ const Hero = () => {
            */}
           <TextGenerateEffect
             words={t("heroTitle")}
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            className="text-center text-[36px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
@@ -64,7 +65,7 @@ const Hero = () => {
 
           <a href="#about">
             <MagicButton
-              title="Let's get in touch"
+              title={t("ButtonText")}
               icon={<FaLocationArrow />}
               position="right"
             />

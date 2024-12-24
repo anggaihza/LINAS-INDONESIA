@@ -1,5 +1,5 @@
 "use client";
-import React, {useEffect, useRef, useState} from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   motion,
   AnimatePresence,
@@ -7,17 +7,17 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import Link from "next/link";
-import {cn} from "@/lib/utils";
-import {useRouter} from "next/navigation";
-import {useLoading} from "@/context/LoadingProvider";
-import {useTranslations, useLocale} from "next-intl";
+import { cn } from "@/lib/utils";
+import { useRouter } from "next/navigation";
+import { useLoading } from "@/context/LoadingProvider";
+import { useTranslations, useLocale } from "next-intl";
 
-export const FloatingNav = ({className}: {className?: string}) => {
-  const {scrollYProgress} = useScroll();
+export const FloatingNav = ({ className }: { className?: string }) => {
+  const { scrollYProgress } = useScroll();
   const router = useRouter();
   const currentLocale = useLocale();
   const [localeSwitcherVisible, setLocaleSwitcherVisible] = useState(false);
-  const {isLoading, setIsLoading} = useLoading();
+  const { isLoading, setIsLoading } = useLoading();
   const [visible, setVisible] = useState(true);
   const localeSwitcherRef = useRef<HTMLDivElement | null>(null);
   const t = useTranslations("NavItem");
@@ -70,10 +70,10 @@ export const FloatingNav = ({className}: {className?: string}) => {
   }, []);
 
   const navItems = [
-    {name: t("About"), link: "#about"},
-    {name: t("Projects"), link: "#projects"},
-    {name: t("Testimonials"), link: "#testimonials"},
-    {name: t("FAQ"), link: "#contact"},
+    { name: t("About"), link: "#about" },
+    { name: t("Services"), link: "#services" },
+    { name: t("Testimonials"), link: "#testimonials" },
+    { name: t("FAQ"), link: "#contact" },
   ];
 
   return (
@@ -100,14 +100,16 @@ export const FloatingNav = ({className}: {className?: string}) => {
             backgroundColor: "rgba(17, 25, 40, 0.75)",
             borderRadius: "12px",
             border: "1px solid rgba(255, 255, 255, 0.125)",
-          }}>
+          }}
+        >
           {navItems.map((navItem: any, idx: number) => (
             <Link
               key={`link=${idx}`}
               href={navItem.link}
               className={cn(
                 "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
-              )}>
+              )}
+            >
               <span className="block sm:hidden">{navItem.icon}</span>
 
               <span className=" text-sm !cursor-pointer">{navItem.name}</span>
@@ -115,11 +117,13 @@ export const FloatingNav = ({className}: {className?: string}) => {
           ))}
           <div
             className="flex items-center justify-center relative"
-            onClick={() => setLocaleSwitcherVisible(!localeSwitcherVisible)}>
+            onClick={() => setLocaleSwitcherVisible(!localeSwitcherVisible)}
+          >
             <img src="/globe.svg" alt="Globe" className="w-4 h-4" />
             <span
               className="absolute text-[7px] dark:text-neutral-50 text-neutral-600"
-              style={{top: "-0.5rem", right: "-0.6rem"}}>
+              style={{ top: "-0.5rem", right: "-0.6rem" }}
+            >
               {currentLocale.toUpperCase()}
             </span>
             {localeSwitcherVisible && (
@@ -130,15 +134,18 @@ export const FloatingNav = ({className}: {className?: string}) => {
                   backgroundColor: "rgba(17, 25, 40, 0.75)",
                   borderRadius: "12px",
                 }}
-                ref={localeSwitcherRef}>
+                ref={localeSwitcherRef}
+              >
                 <button
                   onClick={() => handleLocaleChange("en")}
-                  className="block px-4 py-2 text-sm text-left w-full hover:bg-neutral-100 dark:hover:bg-neutral-400 rounded-sm ">
+                  className="block px-4 py-2 text-sm text-left w-full hover:bg-neutral-100 dark:hover:bg-neutral-400 rounded-sm "
+                >
                   English
                 </button>
                 <button
                   onClick={() => handleLocaleChange("id")}
-                  className="block px-4 py-2 text-sm text-left w-full hover:bg-neutral-100 dark:hover:bg-neutral-400 rounded-sm">
+                  className="block px-4 py-2 text-sm text-left w-full hover:bg-neutral-100 dark:hover:bg-neutral-400 rounded-sm"
+                >
                   Indonesia
                 </button>
               </div>

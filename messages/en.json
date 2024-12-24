@@ -2,7 +2,8 @@
   "HomePage": {
     "smallTitle": "Welcome to Arsy Creative Studio",
     "heroTitle": "Turning Your Vision into Innovative Designs & Powerful Solutions",
-    "heroDesc": "We build dynamic digital experiences and designs that inspire and engage."
+    "heroDesc": "We craft exceptional web & app experiences and visually captivating designs.",
+    "ButtonText": "Let's get in touch"
   },
   "AboutPage": {
     "card1": "We value collaboration through open and transparent communication.",
@@ -69,6 +70,7 @@
   "NavItem": {
     "About": "About",
     "Projects": "Projects",
+    "Services": "Services",
     "Testimonials": "Testimonials",
     "FAQ": "FAQ"
   }

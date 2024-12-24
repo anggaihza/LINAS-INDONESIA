@@ -2,7 +2,8 @@
   "HomePage": {
     "smallTitle": "Selamat Datang di Arsy Creative Studio",
     "heroTitle": "Mewujudkan Ide Menjadi Desain Inovatif & Solusi Bermakna",
-    "heroDesc": "Kami menghadirkan pengalaman web dan aplikasi yang interaktif dengan sentuhan desain yang menarik."
+    "heroDesc": "Kami menghadirkan pengalaman web dan aplikasi yang interaktif dengan sentuhan desain yang menarik.",
+    "ButtonText": "Hubungi Kami"
   },
   "AboutPage": {
     "card1": "Kami percaya kolaborasi terbaik dimulai dari komunikasi yang terbuka dan transparan.",
@@ -69,6 +70,7 @@
   "NavItem": {
     "About": "Tentang",
     "Projects": "Proyek",
+    "Services": "Layanan",
     "Testimonials": "Testimoni",
     "FAQ": "FAQ"
   }
