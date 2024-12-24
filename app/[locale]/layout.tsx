@@ -1,14 +1,14 @@
-import type {Metadata} from "next";
-import {Inter} from "next/font/google";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 
 import "./globals.css";
-import {ThemeProvider} from "../provider";
-import {NextIntlClientProvider} from "next-intl";
-import {getMessages} from "next-intl/server";
-import {routing} from "@/i18n/routing";
-import {LoadingProvider} from "@/context/LoadingProvider";
+import { ThemeProvider } from "../provider";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { routing } from "@/i18n/routing";
+import { LoadingProvider } from "@/context/LoadingProvider";
 
-const inter = Inter({subsets: ["latin"]});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Arsy Creative Studio",
@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params: {locale},
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
-  params: {locale: string};
+  params: { locale: string };
 }>) {
   const messages = await getMessages();
   return (
@@ -33,7 +33,8 @@ export default async function RootLayout({
           attribute="class"
           defaultTheme="dark"
           enableSystem
-          disableTransitionOnChange>
+          disableTransitionOnChange
+        >
           <LoadingProvider>
             <NextIntlClientProvider messages={messages}>
               {children}

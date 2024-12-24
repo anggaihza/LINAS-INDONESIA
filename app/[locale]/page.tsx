@@ -3,19 +3,20 @@ import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
-import {FloatingNav} from "@/components/ui/FloatingNav";
-import {navItems} from "@/data";
+import { FloatingNav } from "@/components/ui/FloatingNav";
+import { navItems } from "@/data";
 import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
-import {WhatsAppButton} from "@/components/ui/WhatsAppButton";
-import {useTranslations} from "next-intl";
+import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
-import {useLoading} from "@/context/LoadingProvider";
-import {useEffect} from "react";
+import { useLoading } from "@/context/LoadingProvider";
+import { useEffect } from "react";
+import FAQComponent from "@/components/FaqComponent";
 
 export default function Home() {
   const t = useTranslations("HomePage");
-  const {isLoading, setIsLoading} = useLoading();
+  const { isLoading, setIsLoading } = useLoading();
 
   useEffect(() => {
     const timeout = setTimeout(() => setIsLoading(false), 2000); // Adjust timeout as needed
@@ -42,7 +43,7 @@ export default function Home() {
         <Clients />
         <Experience />
         <Approach />
-
+        <FAQComponent />
         <Footer />
         <WhatsAppButton />
       </div>
