@@ -7,6 +7,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { LoadingProvider } from "@/context/LoadingProvider";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,17 @@ export default async function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/a-logo.png" sizes="any" />
+        <Script
+          async
+          strategy="lazyOnload"
+          src="https://www.googletagmanager.com/gtag/js?id=G-TS9MKBZWRM"
+        ></Script>
+        <Script id="google-analytics" strategy="lazyOnload">{`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-TS9MKBZWRM');
+            `}</Script>
       </head>
       <body className={inter.className}>
         <ThemeProvider
