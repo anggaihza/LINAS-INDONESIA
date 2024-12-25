@@ -73,7 +73,7 @@ export const FloatingNav = ({ className }: { className?: string }) => {
     { name: t("About"), link: "#about" },
     { name: t("Services"), link: "#services" },
     { name: t("Testimonials"), link: "#testimonials" },
-    { name: t("FAQ"), link: "#contact" },
+    { name: t("FAQ"), link: "#faq" },
   ];
 
   return (

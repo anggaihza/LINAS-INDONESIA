@@ -12,7 +12,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useLoading } from "@/context/LoadingProvider";
 import { useEffect } from "react";
-import FAQComponent from "@/components/FaqComponent";
+import FAQComponent from "@/components/FAQComponent";
 
 export default function Home() {
   const t = useTranslations("HomePage");

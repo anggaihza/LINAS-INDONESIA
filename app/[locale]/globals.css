@@ -102,25 +102,9 @@
   }
 }
 
-.data-[open="true"] .nextui-accordion-indicator {
-  transform: rotate(-90deg);
-  transition: transform 0.2s ease-in-out;
+[data-focus-visible] {
+  outline: none !important;
 }
-
-.nextui-accordion-indicator {
-  transform: rotate(0deg);
-  transition: transform 0.2s ease-in-out;
-}
-
-/* Rotates the indicator when the accordion is open */
-.accordion-indicator {
-  transition: transform 0.2s ease-in-out;
-}
-
-[data-open="true"] .accordion-indicator {
-  transform: rotate(-90deg); /* Adjust rotation angle as per your design */
-}
-
-[data-open="false"] .accordion-indicator {
-  transform: rotate(0deg);
+button:focus {
+  outline: none !important;
 }

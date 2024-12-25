@@ -11,11 +11,11 @@ const Footer = () => {
   return (
     <footer className="w-full overflow-clip pt-20 pb-10" id="contact">
       {/* background grid */}
-      <div className="w-full absolute overflow-clip left-0 bottom-[-200px] ">
+      <div className="w-full absolute overflow-clip left-0 bottom-[0px] ">
         <img
           src="/footer-grid.svg"
           alt="grid"
-          className="w-full h-full opacity-50 "
+          className="w-full h-full opacity-75 "
         />
       </div>
 
@@ -29,7 +29,7 @@ const Footer = () => {
           {t("Description")}
         </p>
         {/* <a href="mailto:contact@jsmastery.pro"> */}
-        <a href="">
+        <a href="mailto:angga.asep98gmail.com">
           <MagicButton
             title={t("ButtonText")}
             icon={<FaLocationArrow />}

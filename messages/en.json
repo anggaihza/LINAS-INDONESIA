@@ -42,7 +42,7 @@
   },
   "OurApproach": {
     "BigTitle": "Our",
-    "BigTitle2": "Approach",
+    "BigTitle2": "Process",
     "Phases1": {
       "Title": "Planning & Strategy",
       "Order": "Phase 1",
@@ -73,5 +73,37 @@
     "Services": "Services",
     "Testimonials": "Testimonials",
     "FAQ": "FAQ"
+  },
+  "FAQ": {
+    "HeadingStart": "Frequently Asked",
+    "HeadingEnd": "Questions",
+    "Item1": {
+      "ariaLabel": "Accordion 1",
+      "title": "How much does it cost to make a website or app?",
+      "content": "It really depends on what you need! A simple site will cost less than a custom app with all the bells and whistles. Reach out, and we’ll chat about your budget."
+    },
+    "Item2": {
+      "ariaLabel": "Accordion 2",
+      "title": "How long does it take to finish a project?",
+      "content": "It depends! A straightforward website might take a couple of weeks, but bigger projects like apps can take a few months. We’ll keep you updated every step of the way."
+    },
+    "Item3": {
+      "ariaLabel": "Accordion 3",
+      "title": "What if I don’t like the design?",
+      "content": "Don’t worry! We’ll revise your design until you’re 100% happy with it. Your satisfaction is our top priority."
+    },
+    "Item4": {
+      "ariaLabel": "Accordion 4",
+      "title": "Do you offer support after the project is done?",
+      "content": "Absolutely! We’re here to help even after launch – whether it’s updates, fixes, or just advice on the next big thing."
+    },
+    "Item5": {
+      "ariaLabel": "Accordion 5",
+      "title": "What will be the method of payment?",
+      "content": {
+        "part1": "Bank Transfer: The best way to pay! We’ll share our bank details, and you can transfer the amount. It usually takes 1–2 days, depending on whether it’s a local or international transfer.",
+        "part2": "PayPal: Super handy and instant (unless it’s an eCheck). Many online invoicing systems also integrate with PayPal, making it super convenient."
+      }
+    }
   }
 }

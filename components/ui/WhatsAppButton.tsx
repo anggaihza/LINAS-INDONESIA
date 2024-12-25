@@ -1,26 +1,22 @@
+import { whatsappLink } from "@/lib/utils";
 import React from "react";
 
 export const WhatsAppButton = () => {
-  const whatsappNumber = "+6285860654098";
-  const message = "Hello! I would like to know more about your services.";
-
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-    message
-  )}`;
-
   return (
     <a
       href={whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-32 right-5 bg-green-500 text-white p-3 rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition-transform transform hover:scale-110 z-50"
-      aria-label="Chat on WhatsApp">
+      aria-label="Chat on WhatsApp"
+    >
       <svg
         width="28"
         height="27"
         viewBox="0 0 31 30"
         fill="none"
-        xmlns="http://www.w3.org/2000/svg">
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
           d="M0.5 28.8803C0.5 29.0438 0.566605 29.2029 0.689514 29.3209C0.851562 29.4765 1.08685 29.5365 1.30681 29.478L8.4287 27.5845C10.6244 28.7634 13.1082 29.3849 15.6295 29.384C23.8292 29.3807 30.5 22.9022 30.5 14.9419C30.4984 11.0809 28.9493 7.45295 26.1387 4.72613C23.3278 1.99974 19.5913 0.49889 15.6176 0.500001C7.41772 0.503557 0.746505 6.98208 0.746505 14.9419C0.746505 14.9419 0.746505 14.9479 0.746505 14.9481C0.747421 17.2732 1.33107 19.5782 2.43657 21.6306L0.520828 28.7231C0.506866 28.7751 0.5 28.828 0.5 28.8803V28.8803Z"
           fill="white"

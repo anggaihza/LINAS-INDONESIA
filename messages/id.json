@@ -41,7 +41,7 @@
     }
   },
   "OurApproach": {
-    "BigTitle": "Pendekatan",
+    "BigTitle": "Proses",
     "BigTitle2": "Kami",
     "Phases1": {
       "Title": "Perencanaan & Strategi",
@@ -73,5 +73,37 @@
     "Services": "Layanan",
     "Testimonials": "Testimoni",
     "FAQ": "FAQ"
+  },
+  "FAQ": {
+    "HeadingStart": "Pertanyaan yang Sering",
+    "HeadingEnd": "Ditanyakan",
+    "Item1": {
+      "ariaLabel": "Accordion 1",
+      "title": "Berapa biaya untuk membuat website atau aplikasi?",
+      "content": "Semua tergantung kebutuhan Anda! Website sederhana akan lebih hemat dibandingkan aplikasi custom dengan fitur lengkap. Yuk, hubungi kami untuk diskusi soal anggaran."
+    },
+    "Item2": {
+      "ariaLabel": "Accordion 2",
+      "title": "Berapa lama biasanya menyelesaikan proyek?",
+      "content": "Tergantung jenis proyeknya! Website sederhana bisa selesai dalam hitungan minggu, sementara aplikasi besar mungkin memakan waktu beberapa bulan. Tenang, kami akan selalu update progressnya."
+    },
+    "Item3": {
+      "ariaLabel": "Accordion 3",
+      "title": "Bagaimana jika saya kurang suka dengan desainnya?",
+      "content": "Tenang saja! Kami akan revisi desainnya sampai Anda benar-benar puas. Kepuasan Anda adalah prioritas utama kami."
+    },
+    "Item4": {
+      "ariaLabel": "Accordion 4",
+      "title": "Apakah ada layanan dukungan setelah proyek selesai?",
+      "content": "Tentu saja! Kami selalu siap membantu, baik untuk pembaruan, perbaikan, atau bahkan saran untuk ide besar berikutnya."
+    },
+    "Item5": {
+      "ariaLabel": "Accordion 5",
+      "title": "Bagaimana metode pembayarannya?",
+      "content": {
+        "part1": "Transfer Bank: Pilihan yang simpel dan aman! Kami akan memberikan detail rekening kami untuk transfer. Biasanya butuh 1–2 hari, tergantung apakah lokal atau internasional.",
+        "part2": "PayPal: Cepat dan praktis (kecuali eCheck). Banyak sistem faktur online yang juga mendukung PayPal, jadi ini sangat mudah digunakan."
+      }
+    }
   }
 }
