@@ -12,7 +12,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useLoading } from "@/context/LoadingProvider";
 import { useEffect } from "react";
-import FaqComponent from "@/components/FAQComponent";
+import FaqSection from "@/components/FaqSection";
 
 export default function Home() {
   const t = useTranslations("HomePage");
@@ -43,7 +43,7 @@ export default function Home() {
         <Clients />
         <Experience />
         <Approach />
-        <FaqComponent />
+        <FaqSection />
         <Footer />
         <WhatsAppButton />
       </div>
