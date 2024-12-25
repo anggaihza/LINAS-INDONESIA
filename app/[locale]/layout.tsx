@@ -8,6 +8,7 @@ import { getMessages } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { LoadingProvider } from "@/context/LoadingProvider";
 import Head from "next/head";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -53,6 +54,7 @@ export default async function RootLayout({
         >
           <LoadingProvider>
             <NextIntlClientProvider messages={messages}>
+              <GoogleAnalytics gaId="G-TS9MKBZWRM" />
               {children}
             </NextIntlClientProvider>
           </LoadingProvider>
