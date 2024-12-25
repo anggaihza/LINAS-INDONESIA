@@ -6,7 +6,7 @@ import React from "react";
 // Define the type for the `selectedKeys` state
 type SelectedKeys = Set<string>;
 
-const FAQComponent: React.FC = () => {
+const FaqComponent: React.FC = () => {
   const t = useTranslations("FAQ");
   const [selectedKeys, setSelectedKeys] = React.useState<SelectedKeys>(
     new Set(["1"])
@@ -119,4 +119,4 @@ const FAQComponent: React.FC = () => {
   );
 };
 
-export default FAQComponent;
+export default FaqComponent;
