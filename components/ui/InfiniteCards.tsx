@@ -45,7 +45,7 @@ export const InfiniteMovingCards = ({
   }
   const getDirection = () => {
     if (containerRef.current) {
-      if (direction === "left") {
+      if (direction === "right") {
         containerRef.current.style.setProperty(
           "--animation-direction",
           "forwards"
@@ -89,7 +89,7 @@ export const InfiniteMovingCards = ({
           <li
             //   change md:w-[450px] to md:w-[60vw] , px-8 py-6 to p-16, border-slate-700 to border-slate-800
             className="w-[100vw] max-w-full relative rounded-2xl border border-b-0
-             flex-shrink-0 border-slate-800 p-5 md:p-16 md:w-[60vw]"
+             flex-shrink-0 border-slate-800 p-5 md:p-8 md:w-[60vw]"
             style={{
               //   background:
               //     "linear-gradient(180deg, var(--slate-800), var(--slate-900)", //remove this one
@@ -113,18 +113,18 @@ export const InfiniteMovingCards = ({
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 {/* add this div for the profile img */}
-                <div className="me-3">
+                {/* <div className="me-3">
                   <img src="/profile.png" alt="profile" />
-                </div>
-                <span className="flex flex-col gap-1">
+                </div> */}
+                <span className="flex flex-col gap-0">
                   {/* change text color, font-normal to font-bold, text-xl */}
-                  <span className="text-xl font-bold leading-[1.6] text-white">
+                  <span className="font-bold leading-[1.6] text-white">
                     {item.name}
                   </span>
                   {/* change text color */}
-                  <span className=" text-sm leading-[1.6] text-white-200 font-normal">
+                  {/* <span className=" text-sm leading-[1.6] text-white-200 font-normal">
                     {item.title}
-                  </span>
+                  </span> */}
                 </span>
               </div>
             </blockquote>

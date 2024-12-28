@@ -43,7 +43,7 @@ export const FloatingNav = ({ className }: { className?: string }) => {
     try {
       await router.push(`/${locale}`); // Navigate to the new locale
       // Wait for locale propagation (optional, if needed to sync translations)
-      await new Promise((resolve) => setTimeout(resolve, 100));
+      // await new Promise((resolve) => setTimeout(resolve, 1000));
     } catch (error) {
       // console.error("Error changing locale:", error);
     } finally {

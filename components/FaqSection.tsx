@@ -40,12 +40,9 @@ const FaqSection: React.FC = () => {
     base: "py-4 w-full",
     title: "text-start text-xl md:text-2xl font-semibold ",
     trigger:
-      " py-5 data-[hover=true]:bg-default-100 rounded-lg h-14 flex items-center justify-between",
-    content: "text-small text-white-100 mt-3",
+      "py-4 data-[hover=true]:bg-default-100 rounded-lg h-17 flex items-center justify-between",
+    content: "text-small text-white-100 mt-2",
   };
-
-  const defaultContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   return (
     <div className="relative z-50" id="faq">
@@ -66,7 +63,7 @@ const FaqSection: React.FC = () => {
             key="1"
             aria-label={t("Item1.ariaLabel")}
             title={t("Item1.title")}
-            className="mb-2 rounded-lg"
+            className="rounded-lg"
             indicator={({ isOpen = false }) => <ArrowIcon isOpen={!!isOpen} />}
             style={{
               outline: "none",
@@ -80,7 +77,7 @@ const FaqSection: React.FC = () => {
             key="2"
             aria-label={t("Item2.ariaLabel")}
             title={t("Item2.title")}
-            className="mb-2 rounded-lg"
+            className="rounded-lg"
             indicator={({ isOpen = false }) => <ArrowIcon isOpen={!!isOpen} />}
           >
             {t("Item2.content")}
