@@ -14,7 +14,6 @@ import { useLoading } from "@/context/LoadingProvider";
 import { useEffect, useState } from "react";
 import FaqSection from "@/components/FaqSection";
 import { useRouter } from "next/navigation";
-import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 export default function Home() {
   const { isLoading, setIsLoading } = useLoading();
@@ -51,7 +50,6 @@ export default function Home() {
 
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      <GoogleAnalytics gaId="G-TS9MKBZWRM" />
       <div className="max-w-7xl w-full">
         {/* {showModal && <LanguageModal onClose={handleCloseModal} />} */}
         <FloatingNav />
