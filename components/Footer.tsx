@@ -38,7 +38,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex mt-16 md:flex-row gap-2 md:gap-0 flex-col justify-between items-center">
-        <p className="flex flex-col md:text-base text-sm md:font-normal font-light">
+        <p className="flex flex-col justify-center items-center md:items-start md:text-base text-sm md:font-normal font-light">
           {/* Copyright © 2024 Adrian Hajdin */}
           Arsy Creative Studio{" "}
           <span className="text-xs text-[#C1C2D3]">
