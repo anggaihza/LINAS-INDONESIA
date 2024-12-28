@@ -60,9 +60,9 @@ const Hero = () => {
             className="text-center text-[36px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl lg:max-w-[55vw]">
+          <div className="text-center md:tracking-wider text-blue-100 mb-4 text-sm md:text-lg lg:text-2xl lg:max-w-[55vw]">
             {t("heroDesc")}
-          </p>
+          </div>
 
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
             <MagicButton
